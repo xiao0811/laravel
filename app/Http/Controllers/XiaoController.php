@@ -8,6 +8,8 @@ class XiaoController
 {
     public function index()
     {
-        return Users::query()->first();
+        return Users::query()->create([
+            "name" => "xiaozang"
+        ]);
     }
 }
